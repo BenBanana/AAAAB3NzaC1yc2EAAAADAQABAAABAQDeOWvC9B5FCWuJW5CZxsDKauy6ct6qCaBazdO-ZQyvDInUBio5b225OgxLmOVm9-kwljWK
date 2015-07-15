@@ -1,0 +1,248 @@
+{%load staticfiles%}
+<link rel="stylesheet" type="text/css" href="{% static 'journal/contents.css' %}" />
+
+
+{% block title %}
+    <div class= title>
+        <h1 class= top>Journal of 2015</h1>
+        <h1 class= top2>Dear Journal...</h1>
+    </div>
+{% endblock %}
+
+{% block content %}
+    {% if entries %}
+    
+        <div class= month>
+            <h2>
+                January Entries
+            </h2>
+            <ul>
+                {% for entry in entries %}
+                    {% if entry.month == 'January' %}
+                        <li id=point>
+                            <a href={%url 'detail' entry.id %}>
+                                <p>
+                                {{entry.day}} {{entry.month}}
+                                </p>
+                            </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>       
+        
+        <div class= month>
+            <h2>
+                February Entries
+            </h2>
+            <ul>
+                {% for entry in entries %}
+                    {% if entry.month == 'February' %}
+                        <li id=point>
+                            <a href={%url 'detail' entry.id %}>
+                                {{entry.day}} {{entry.month}}
+                            </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+                {% if number == 0 %}
+                    <p>No entries this month.</p>
+                {% endif %}
+            </ul>
+        </div> 
+        
+        <div class= month>
+            <h2>
+                March Entries
+            </h2>
+            <ul>
+                {% for entry in entries %}
+                    {% if entry.month == 'March' %}
+                        <li id=point>
+                            <a href={%url 'detail' entry.id %}>
+                                <p>
+                                {{entry.day}} {{entry.month}}
+                                </p>
+                            </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>       
+        
+        <div class= month>
+            <h2>
+                April Entries
+            </h2>
+            <ul>
+                {% for entry in entries %}
+                    {% if entry.month == 'April' %}
+                        <li id=point>
+                            <a href={%url 'detail' entry.id %}>
+                                <p>
+                                {{entry.day}} {{entry.month}}
+                                </p>
+                            </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>       
+        
+        <div class= month>
+            <h2>
+                May Entries
+            </h2>
+            <ul>
+                {% for entry in entries %}
+                    {% if entry.month == 'May' %}
+                        <li id=point>
+                            <a href={%url 'detail' entry.id %}>
+                                <p>
+                                {{entry.day}} {{entry.month}}
+                                </p>
+                            </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>       
+        
+        <div class= month>
+            <h2>
+                June Entries
+            </h2>
+            <ul>
+                {% for entry in entries %}
+                    {% if entry.month == 'June' %}
+                        <li id=point>
+                            <a href={%url 'detail' entry.id %}>
+                                <p>
+                                {{entry.day}} {{entry.month}}
+                                </p>
+                            </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>       
+        
+        <div class= month>
+            <h2>
+                July Entries
+            </h2>
+            <ul>
+                {% for entry in entries %}
+                    {% if entry.month == 'July' %}
+                        <li id=point>
+                            <a href={%url 'detail' entry.id %}>
+                                <p>
+                                {{entry.day}} {{entry.month}}
+                                </p>
+                            </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>       
+        
+        <div class= month>
+            <h2>
+                August Entries
+            </h2>
+            <ul>
+                {% for entry in entries %}
+                    {% if entry.month == 'August' %}
+                        <li id=point>
+                            <a href={%url 'detail' entry.id %}>
+                                <p>
+                                {{entry.day}} {{entry.month}}
+                                </p>
+                            </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>       
+        
+        <div class= month>
+            <h2>
+                September Entries
+            </h2>
+            <ul>
+                {% for entry in entries %}
+                    {% if entry.month == 'September' %}
+                        <li id=point>
+                            <a href={%url 'detail' entry.id %}>
+                                <p>
+                                {{entry.day}} {{entry.month}}
+                                </p>
+                            </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>       
+        
+        <div class= month>
+            <h2>
+                October Entries
+            </h2>
+            <ul>
+                {% for entry in entries %}
+                    {% if entry.month == 'October' %}
+                        <li id=point>
+                            <a href={%url 'detail' entry.id %}>
+                                <p>
+                                {{entry.day}} {{entry.month}}
+                                </p>
+                            </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>       
+        
+        <div class= month>
+            <h2>
+                November Entries
+            </h2>
+            <ul>
+                {% for entry in entries %}
+                    {% if entry.month == 'November' %}
+                        <li id=point>
+                            <a href={%url 'detail' entry.id %}>
+                                <p>
+                                {{entry.day}} {{entry.month}}
+                                </p>
+                            </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>       
+        
+        <div class= month>
+            <h2>
+                December Entries
+            </h2>
+            <ul>
+                {% for entry in entries %}
+                    {% if entry.month == 'December' %}
+                        <li id=point>
+                            <a href={%url 'detail' entry.id %}>
+                                <p>
+                                {{entry.day}} {{entry.month}}
+                                </p>
+                            </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>       
+        
+    {% else %}
+        <p>No entries this year.</p>
+    {% endif %}
+    
+{% endblock %}

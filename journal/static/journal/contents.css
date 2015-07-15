@@ -1,0 +1,68 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower);
+@import url(http://fonts.googleapis.com/css?family=Raleway:700);
+@import url(http://fonts.googleapis.com/css?family=Arizonia);
+* { box-sizing:border-box; }
+body { background:url(https://pimg-threadbias-com.s3.amazonaws.com/fabrics/2/1/9/5/5/3e36b5e082f8a830044f425b678a2a70.jpg) #cacaca; margin:30px; }
+
+.month {
+    text-align:center;
+    display: block;
+	padding:25px 25px 40px;
+	margin:0 auto 20px auto;
+	width:500px;
+	height:300px;   
+	border:0;
+	border-radius:3px;
+	background: -webkit-linear-gradient(#F9EFAF, #F7E98D);
+	background: -moz-linear-gradient(#F9EFAF, #F7E98D);
+	background: -o-linear-gradient(#F9EFAF, #F7E98D);
+	background: -ms-linear-gradient(#F9EFAF, #F7E98D);
+	background: linear-gradient(#F9EFAF, #F7E98D);
+	box-shadow:0 4px 6px rgba(0,0,0,0.1);
+	overflow:hidden;
+	transition:box-shadow 0.5s ease;
+	max-width:1000px;
+	max-height:500px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#point {
+    list-style-type: none;
+}
+
+.title {
+	width:390px;
+	height:100px;
+	background-color:white;
+}
+
+h1{
+	margin: 0;
+}
+
+.top {
+	text-shadow: 2px 2px #ff0000;
+	text-align: left;
+	font:50px 'Open Sans', sans-serif;
+}
+
+.top2 {
+	text-align: center;
+	font:35px 'Arizonia', cursive;
+}
+
+h2 {
+    text-align: center;
+    font:35px 'Raleway', sans-serif;
+}
+
+p  {
+	margin: 0;
+    text-align: left;
+	font:30px 'Indie Flower', cursive; 
+}

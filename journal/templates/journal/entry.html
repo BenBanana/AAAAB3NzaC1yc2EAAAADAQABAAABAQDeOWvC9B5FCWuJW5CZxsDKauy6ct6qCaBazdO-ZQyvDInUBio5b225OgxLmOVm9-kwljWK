@@ -1,0 +1,18 @@
+{%load staticfiles%}
+<link rel="stylesheet" type="text/css" href="{% static 'journal/entry.css' %}" />
+
+{% block title %}
+    <div class= title>
+        <h1 class= top>Journal of 2015</h1>
+        <h1 class= top2>Dear Journal...</h1>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class = month>
+        <h4>#{{entry.id}}</h4>
+        <h2>{{entry.day}} {{entry.month}}</h2>
+        <h3>{{entry.title}}</h3>
+        <p>{{entry.content}}</p>
+    </div>
+{% endblock %}
